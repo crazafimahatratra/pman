@@ -1,0 +1,42 @@
+<RCC>
+  <qresource prefix="std">
+    <file>icons/87457.png</file>
+    <file>icons/question.png</file>
+    <file>icons/87457.ico</file>
+    <file>icons/sticky-note.png</file>
+    <file>icons/sticky-note--plus.png</file>
+    <file>icons/notebook--minus.png</file>
+    <file>icons/notebook--pencil.png</file>
+    <file>icons/notebook--plus.png</file>
+    <file>icons/calendar--minus.png</file>
+    <file>icons/calendar--pencil.png</file>
+    <file>icons/calendar--plus.png</file>
+    <file>icons/calendar.png</file>
+    <file>icons/flag.png</file>
+    <file>icons/tick-white.png</file>
+    <file>icons/property.png</file>
+    <file>icons/disk.png</file>
+    <file>icons/document-rename.png</file>
+    <file>icons/arrow-curve.png</file>
+    <file>icons/arrow-curve-180-left.png</file>
+    <file>icons/disk-black.png</file>
+    <file>icons/notebook.png</file>
+    <file>icons/lightning--arrow.png</file>
+    <file>icons/notebook--arrow.png</file>
+    <file>icons/folder--pencil.png</file>
+    <file>icons/folder--minus.png</file>
+    <file>icons/folder--plus.png</file>
+    <file>icons/clock.png</file>
+    <file>icons/accept.png</file>
+    <file>icons/icons8-underline-10.png</file>
+    <file>icons/icons8-crayon-16.png</file>
+    <file>icons/icons8-add-folder-16.png</file>
+    <file>icons/icons8-italic-10.png</file>
+    <file>icons/icons8-bold-10.png</file>
+    <file>icons/icons8-tasks-16.png</file>
+    <file>icons/icons8-save-16.png</file>
+    <file>icons/icons8-cancel-16.png</file>
+    <file>icons/icons8-edit-16.png</file>
+    <file>icons/icons8-plus-16.png</file>
+  </qresource>
+</RCC>

@@ -1,0 +1,157 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>MdiProject</class>
+ <widget class="QDialog" name="MdiProject">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>738</width>
+    <height>528</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>Dialog</string>
+  </property>
+  <layout class="QVBoxLayout" name="verticalLayout">
+   <property name="spacing">
+    <number>0</number>
+   </property>
+   <property name="leftMargin">
+    <number>0</number>
+   </property>
+   <property name="topMargin">
+    <number>0</number>
+   </property>
+   <property name="rightMargin">
+    <number>0</number>
+   </property>
+   <property name="bottomMargin">
+    <number>0</number>
+   </property>
+   <item>
+    <widget class="QFrame" name="frame">
+     <property name="minimumSize">
+      <size>
+       <width>0</width>
+       <height>32</height>
+      </size>
+     </property>
+     <property name="maximumSize">
+      <size>
+       <width>16777215</width>
+       <height>32</height>
+      </size>
+     </property>
+     <property name="frameShape">
+      <enum>QFrame::Box</enum>
+     </property>
+     <property name="frameShadow">
+      <enum>QFrame::Sunken</enum>
+     </property>
+     <property name="lineWidth">
+      <number>0</number>
+     </property>
+    </widget>
+   </item>
+   <item>
+    <widget class="QTableWidget" name="tableWidget">
+     <property name="alternatingRowColors">
+      <bool>true</bool>
+     </property>
+     <property name="selectionMode">
+      <enum>QAbstractItemView::SingleSelection</enum>
+     </property>
+     <property name="selectionBehavior">
+      <enum>QAbstractItemView::SelectRows</enum>
+     </property>
+     <attribute name="horizontalHeaderStretchLastSection">
+      <bool>true</bool>
+     </attribute>
+     <attribute name="verticalHeaderVisible">
+      <bool>false</bool>
+     </attribute>
+     <attribute name="verticalHeaderDefaultSectionSize">
+      <number>24</number>
+     </attribute>
+     <column>
+      <property name="text">
+       <string/>
+      </property>
+     </column>
+     <column>
+      <property name="text">
+       <string>Date</string>
+      </property>
+     </column>
+     <column>
+      <property name="text">
+       <string>Task</string>
+      </property>
+     </column>
+    </widget>
+   </item>
+  </layout>
+  <action name="actionNew_Task">
+   <property name="icon">
+    <iconset resource="../icons.qrc">
+     <normaloff>:/std/icons/notebook--plus.png</normaloff>:/std/icons/notebook--plus.png</iconset>
+   </property>
+   <property name="text">
+    <string>New Task</string>
+   </property>
+  </action>
+  <action name="actionEdit_Task">
+   <property name="icon">
+    <iconset resource="../icons.qrc">
+     <normaloff>:/std/icons/notebook--pencil.png</normaloff>:/std/icons/notebook--pencil.png</iconset>
+   </property>
+   <property name="text">
+    <string>Edit Task</string>
+   </property>
+  </action>
+  <action name="actionDelete_Task">
+   <property name="icon">
+    <iconset resource="../icons.qrc">
+     <normaloff>:/std/icons/notebook--minus.png</normaloff>:/std/icons/notebook--minus.png</iconset>
+   </property>
+   <property name="text">
+    <string>Delete Task</string>
+   </property>
+  </action>
+  <action name="actionMarkAsDone">
+   <property name="icon">
+    <iconset resource="../icons.qrc">
+     <normaloff>:/std/icons/accept.png</normaloff>:/std/icons/accept.png</iconset>
+   </property>
+   <property name="text">
+    <string>Mark as Done</string>
+   </property>
+  </action>
+  <action name="actionMarkAsPending">
+   <property name="icon">
+    <iconset resource="../icons.qrc">
+     <normaloff>:/std/icons/clock.png</normaloff>:/std/icons/clock.png</iconset>
+   </property>
+   <property name="text">
+    <string>Mark as Pending</string>
+   </property>
+  </action>
+  <action name="actionNewNote">
+   <property name="icon">
+    <iconset resource="../icons.qrc">
+     <normaloff>:/std/icons/sticky-note--plus.png</normaloff>:/std/icons/sticky-note--plus.png</iconset>
+   </property>
+   <property name="text">
+    <string>New Note</string>
+   </property>
+   <property name="toolTip">
+    <string>New Note</string>
+   </property>
+  </action>
+ </widget>
+ <resources>
+  <include location="../icons.qrc"/>
+ </resources>
+ <connections/>
+</ui>

@@ -1,0 +1,158 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--Detailed report on module anonymous-->
+<CCCC_Project>
+<module_summary>
+<lines_of_code value="10" level="0" />
+<lines_of_code_per_member_function value="******" level="0" />
+<McCabes_cyclomatic_complexity value="0" level="0" />
+<McCabes_cyclomatic_complexity_per_member_function value="******" level="0" />
+<lines_of_code value="0" level="0" />
+<lines_of_code_per_member_function value="********" level="0" />
+<lines_of_code_per_line_of_comment value="------" level="0" />
+<McCabes_cyclomatic_complexity_per_line_of_comment value="------" level="0" />
+<weighted_methods_per_class_unity value="10" level="0" />
+<weighted_methods_per_class_visibility value="10" level="0" />
+<depth_of_inheritance_tree value="0" level="0" />
+<number_of_children value="0" level="0" />
+<coupling_between_objects value="0" level="0" />
+<IF4 value="0" level="0" />
+<IF4_per_member_function value="********" level="0" />
+<IF4_visible value="0" level="0" />
+<IF4_visible_per_member_function value="********" level="0" />
+<IF4_concrete value="0" level="0" />
+<IF4_concrete_per_member_function value="********" level="0" />
+</module_summary>
+<module_detail>
+</module_detail>
+<procedural_detail>
+<member_function>
+<name>DialogEvent(...)</name>
+<extent>
+<description>declaration</description>
+<source_reference file="dialogs\dialogevent.h" line="17" />
+</extent>
+<lines_of_code value="1" level="0" />
+<McCabes_cyclomatic_complexity value="0" level="0" />
+<lines_of_comment value="0" level="0" />
+<lines_of_code_per_line_of_comment value="------" level="0" />
+<McCabes_cyclomatic_complexity_per_line_of_comment value="------" level="0" />
+</member_function>
+<member_function>
+<name>DialogNote(QWidget *,Project *,Note *)</name>
+<extent>
+<description>declaration</description>
+<source_reference file="dialogs\dialognote.h" line="20" />
+</extent>
+<lines_of_code value="1" level="0" />
+<McCabes_cyclomatic_complexity value="0" level="0" />
+<lines_of_comment value="0" level="0" />
+<lines_of_code_per_line_of_comment value="------" level="0" />
+<McCabes_cyclomatic_complexity_per_line_of_comment value="------" level="0" />
+</member_function>
+<member_function>
+<name>DialogProject(QWidget *,int)</name>
+<extent>
+<description>declaration</description>
+<source_reference file="dialogs\dialogproject.h" line="16" />
+</extent>
+<lines_of_code value="1" level="0" />
+<McCabes_cyclomatic_complexity value="0" level="0" />
+<lines_of_comment value="0" level="0" />
+<lines_of_code_per_line_of_comment value="------" level="0" />
+<McCabes_cyclomatic_complexity_per_line_of_comment value="------" level="0" />
+</member_function>
+<member_function>
+<name>DialogTask(QWidget *,int,int)</name>
+<extent>
+<description>declaration</description>
+<source_reference file="dialogs\dialogtask.h" line="16" />
+</extent>
+<lines_of_code value="1" level="0" />
+<McCabes_cyclomatic_complexity value="0" level="0" />
+<lines_of_comment value="0" level="0" />
+<lines_of_code_per_line_of_comment value="------" level="0" />
+<McCabes_cyclomatic_complexity_per_line_of_comment value="------" level="0" />
+</member_function>
+<member_function>
+<name>forceClose()</name>
+<extent>
+<description>declaration</description>
+<source_reference file="dialogs\dialognote.h" line="23" />
+</extent>
+<lines_of_code value="1" level="0" />
+<McCabes_cyclomatic_complexity value="0" level="0" />
+<lines_of_comment value="0" level="0" />
+<lines_of_code_per_line_of_comment value="------" level="0" />
+<McCabes_cyclomatic_complexity_per_line_of_comment value="------" level="0" />
+</member_function>
+<member_function>
+<name>updateNote()</name>
+<extent>
+<description>declaration</description>
+<source_reference file="dialogs\dialognote.h" line="22" />
+</extent>
+<lines_of_code value="1" level="0" />
+<McCabes_cyclomatic_complexity value="0" level="0" />
+<lines_of_comment value="0" level="0" />
+<lines_of_code_per_line_of_comment value="------" level="0" />
+<McCabes_cyclomatic_complexity_per_line_of_comment value="------" level="0" />
+</member_function>
+<member_function>
+<name>~DialogEvent()</name>
+<extent>
+<description>declaration</description>
+<source_reference file="dialogs\dialogevent.h" line="18" />
+</extent>
+<lines_of_code value="1" level="0" />
+<McCabes_cyclomatic_complexity value="0" level="0" />
+<lines_of_comment value="0" level="0" />
+<lines_of_code_per_line_of_comment value="------" level="0" />
+<McCabes_cyclomatic_complexity_per_line_of_comment value="------" level="0" />
+</member_function>
+<member_function>
+<name>~DialogNote()</name>
+<extent>
+<description>declaration</description>
+<source_reference file="dialogs\dialognote.h" line="21" />
+</extent>
+<lines_of_code value="1" level="0" />
+<McCabes_cyclomatic_complexity value="0" level="0" />
+<lines_of_comment value="0" level="0" />
+<lines_of_code_per_line_of_comment value="------" level="0" />
+<McCabes_cyclomatic_complexity_per_line_of_comment value="------" level="0" />
+</member_function>
+<member_function>
+<name>~DialogProject()</name>
+<extent>
+<description>declaration</description>
+<source_reference file="dialogs\dialogproject.h" line="17" />
+</extent>
+<lines_of_code value="1" level="0" />
+<McCabes_cyclomatic_complexity value="0" level="0" />
+<lines_of_comment value="0" level="0" />
+<lines_of_code_per_line_of_comment value="------" level="0" />
+<McCabes_cyclomatic_complexity_per_line_of_comment value="------" level="0" />
+</member_function>
+<member_function>
+<name>~DialogTask()</name>
+<extent>
+<description>declaration</description>
+<source_reference file="dialogs\dialogtask.h" line="17" />
+</extent>
+<lines_of_code value="1" level="0" />
+<McCabes_cyclomatic_complexity value="0" level="0" />
+<lines_of_comment value="0" level="0" />
+<lines_of_code_per_line_of_comment value="------" level="0" />
+<McCabes_cyclomatic_complexity_per_line_of_comment value="------" level="0" />
+</member_function>
+</procedural_detail>
+<structural_detail>
+<module>
+<name>anonymous</name>
+<client_module>
+</client_module>
+<supplier_module>
+</supplier_module>
+</module>
+</structural_detail>
+</CCCC_Project>

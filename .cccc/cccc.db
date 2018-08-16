@@ -1,0 +1,142 @@
+CCCC_Module@DialogEvent@class@
+CCCC_ModExt@DialogEvent@class@dialogs\dialogevent.h@9@declaration@????2@LOC:1 COM:0 MVG:0@2@D@
+CCCC_ModExt@DialogEvent@class@dialogs\dialogevent.h@12@definition@????0@LOC:4 COM:0 MVG:0@0@d@
+CCCC_Module@DialogNote@class@
+CCCC_ModExt@DialogNote@class@dialogs\dialognote.h@12@declaration@????2@LOC:1 COM:0 MVG:0@2@D@
+CCCC_ModExt@DialogNote@class@dialogs\dialognote.h@15@definition@????0@LOC:4 COM:0 MVG:0@0@d@
+CCCC_Module@DialogProject@class@
+CCCC_ModExt@DialogProject@class@dialogs\dialogproject.h@8@declaration@????2@LOC:1 COM:0 MVG:0@2@D@
+CCCC_ModExt@DialogProject@class@dialogs\dialogproject.h@11@definition@????0@LOC:4 COM:0 MVG:0@0@d@
+CCCC_Module@DialogTask@class@
+CCCC_ModExt@DialogTask@class@dialogs\dialogtask.h@8@declaration@????2@LOC:1 COM:0 MVG:0@2@D@
+CCCC_ModExt@DialogTask@class@dialogs\dialogtask.h@11@definition@????0@LOC:4 COM:0 MVG:0@0@d@
+CCCC_Module@Note@@
+CCCC_Module@Project@@
+CCCC_Module@QCloseEvent@@
+CCCC_Module@QDate@@
+CCCC_Module@QDialog@@
+CCCC_Module@QString@@
+CCCC_Module@QWidget@@
+CCCC_Module@anonymous@@
+CCCC_Module@bool@@
+CCCC_Module@char@builtin@
+CCCC_ModExt@char@builtin@<nofile>@0@builtin definition@d?????@@0@d@
+CCCC_Module@double@builtin@
+CCCC_ModExt@double@builtin@<nofile>@0@builtin definition@d?????@@0@d@
+CCCC_Module@float@builtin@
+CCCC_ModExt@float@builtin@<nofile>@0@builtin definition@d?????@@0@d@
+CCCC_Module@int@builtin@
+CCCC_ModExt@int@builtin@<nofile>@0@builtin definition@d?????@@0@d@
+CCCC_Module@long@builtin@
+CCCC_ModExt@long@builtin@<nofile>@0@builtin definition@d?????@@0@d@
+CCCC_Module@void@builtin@
+CCCC_ModExt@void@builtin@<nofile>@0@builtin definition@d?????@@0@d@
+CCCC_Member@DialogEvent@DialogEvent@@(QWidget *,QDate,int)@
+CCCC_MemExt@DialogEvent@DialogEvent@@(QWidget *,QDate,int)@dialogs\dialogevent.cpp@7@definition@F????@LOC:28 COM:0 MVG:4@?@d@
+CCCC_Member@DialogEvent@fillProjects@@()@
+CCCC_MemExt@DialogEvent@fillProjects@@()@dialogs\dialogevent.cpp@60@definition@F????@LOC:9 COM:0 MVG:1@?@d@
+CCCC_Member@DialogEvent@on_pushButtonCancel_clicked@@()@
+CCCC_MemExt@DialogEvent@on_pushButtonCancel_clicked@@()@dialogs\dialogevent.cpp@70@definition@F????@LOC:4 COM:0 MVG:0@?@d@
+CCCC_Member@DialogEvent@on_pushButtonOK_clicked@@()@
+CCCC_MemExt@DialogEvent@on_pushButtonOK_clicked@@()@dialogs\dialogevent.cpp@41@definition@F????@LOC:18 COM:0 MVG:1@?@d@
+CCCC_Member@DialogEvent@~DialogEvent@@()@
+CCCC_MemExt@DialogEvent@~DialogEvent@@()@dialogs\dialogevent.cpp@36@definition@F????@LOC:4 COM:0 MVG:0@?@d@
+CCCC_Member@DialogNote@DialogNote@@(QWidget *,Project *,Note *)@
+CCCC_MemExt@DialogNote@DialogNote@@(QWidget *,Project *,Note *)@dialogs\dialognote.cpp@8@definition@F????@LOC:31 COM:0 MVG:1@?@d@
+CCCC_Member@DialogNote@closeEvent@@(QCloseEvent *)@
+CCCC_MemExt@DialogNote@closeEvent@@(QCloseEvent *)@dialogs\dialognote.cpp@96@definition@F????@LOC:21 COM:0 MVG:3@?@d@
+CCCC_Member@DialogNote@forceClose@@()@
+CCCC_MemExt@DialogNote@forceClose@@()@dialogs\dialognote.cpp@58@definition@F????@LOC:5 COM:0 MVG:0@?@d@
+CCCC_Member@DialogNote@on_actionRedo_triggered@@()@
+CCCC_MemExt@DialogNote@on_actionRedo_triggered@@()@dialogs\dialognote.cpp@81@definition@F????@LOC:4 COM:0 MVG:0@?@d@
+CCCC_Member@DialogNote@on_actionRename_triggered@@()@
+CCCC_MemExt@DialogNote@on_actionRename_triggered@@()@dialogs\dialognote.cpp@118@definition@F????@LOC:7 COM:0 MVG:0@?@d@
+CCCC_Member@DialogNote@on_actionSave_triggered@@()@
+CCCC_MemExt@DialogNote@on_actionSave_triggered@@()@dialogs\dialognote.cpp@70@definition@F????@LOC:5 COM:0 MVG:0@?@d@
+CCCC_Member@DialogNote@on_actionUndo_triggered@@()@
+CCCC_MemExt@DialogNote@on_actionUndo_triggered@@()@dialogs\dialognote.cpp@76@definition@F????@LOC:4 COM:0 MVG:0@?@d@
+CCCC_Member@DialogNote@on_lineEditTitle_textChanged@@(const QString &)@
+CCCC_MemExt@DialogNote@on_lineEditTitle_textChanged@@(const QString &)@dialogs\dialognote.cpp@134@definition@F????@LOC:4 COM:0 MVG:0@?@d@
+CCCC_Member@DialogNote@on_textEdit_redoAvailable@@(bool)@
+CCCC_MemExt@DialogNote@on_textEdit_redoAvailable@@(bool)@dialogs\dialognote.cpp@86@definition@F????@LOC:4 COM:0 MVG:0@?@d@
+CCCC_Member@DialogNote@on_textEdit_textChanged@@()@
+CCCC_MemExt@DialogNote@on_textEdit_textChanged@@()@dialogs\dialognote.cpp@64@definition@F????@LOC:5 COM:0 MVG:0@?@d@
+CCCC_Member@DialogNote@on_textEdit_undoAvailable@@(bool)@
+CCCC_MemExt@DialogNote@on_textEdit_undoAvailable@@(bool)@dialogs\dialognote.cpp@91@definition@F????@LOC:4 COM:0 MVG:0@?@d@
+CCCC_Member@DialogNote@on_toolButtonSaveTitle_clicked@@()@
+CCCC_MemExt@DialogNote@on_toolButtonSaveTitle_clicked@@()@dialogs\dialognote.cpp@126@definition@F????@LOC:7 COM:0 MVG:0@?@d@
+CCCC_Member@DialogNote@updateNote@@()@
+CCCC_MemExt@DialogNote@updateNote@@()@dialogs\dialognote.cpp@50@definition@F????@LOC:7 COM:0 MVG:0@?@d@
+CCCC_Member@DialogNote@~DialogNote@@()@
+CCCC_MemExt@DialogNote@~DialogNote@@()@dialogs\dialognote.cpp@45@definition@F????@LOC:4 COM:0 MVG:0@?@d@
+CCCC_Member@DialogProject@DialogProject@@(QWidget *,int)@
+CCCC_MemExt@DialogProject@DialogProject@@(QWidget *,int)@dialogs\dialogproject.cpp@5@definition@F????@LOC:16 COM:0 MVG:1@?@d@
+CCCC_Member@DialogProject@on_pushButtonColor_clicked@@()@
+CCCC_MemExt@DialogProject@on_pushButtonColor_clicked@@()@dialogs\dialogproject.cpp@46@definition@F????@LOC:23 COM:0 MVG:2@?@d@
+CCCC_Member@DialogProject@on_pushButton_2_clicked@@()@
+CCCC_MemExt@DialogProject@on_pushButton_2_clicked@@()@dialogs\dialogproject.cpp@27@definition@F????@LOC:13 COM:0 MVG:1@?@d@
+CCCC_Member@DialogProject@on_pushButton_clicked@@()@
+CCCC_MemExt@DialogProject@on_pushButton_clicked@@()@dialogs\dialogproject.cpp@41@definition@F????@LOC:4 COM:0 MVG:0@?@d@
+CCCC_Member@DialogProject@~DialogProject@@()@
+CCCC_MemExt@DialogProject@~DialogProject@@()@dialogs\dialogproject.cpp@22@definition@F????@LOC:4 COM:0 MVG:0@?@d@
+CCCC_Member@DialogTask@DialogTask@@(QWidget *,int,int)@
+CCCC_MemExt@DialogTask@DialogTask@@(QWidget *,int,int)@dialogs\dialogtask.cpp@6@definition@F????@LOC:21 COM:0 MVG:1@?@d@
+CCCC_Member@DialogTask@on_pushButtonCancel_clicked@@()@
+CCCC_MemExt@DialogTask@on_pushButtonCancel_clicked@@()@dialogs\dialogtask.cpp@47@definition@F????@LOC:4 COM:0 MVG:0@?@d@
+CCCC_Member@DialogTask@on_pushButtonOK_clicked@@()@
+CCCC_MemExt@DialogTask@on_pushButtonOK_clicked@@()@dialogs\dialogtask.cpp@34@definition@F????@LOC:12 COM:0 MVG:1@?@d@
+CCCC_Member@DialogTask@~DialogTask@@()@
+CCCC_MemExt@DialogTask@~DialogTask@@()@dialogs\dialogtask.cpp@29@definition@F????@LOC:4 COM:0 MVG:0@?@d@
+CCCC_Member@anonymous@DialogEvent@@(...)@
+CCCC_MemExt@anonymous@DialogEvent@@(...)@dialogs\dialogevent.h@17@declaration@F???0@LOC:1 COM:0 MVG:0@0@D@
+CCCC_Member@anonymous@DialogNote@@(QWidget *,Project *,Note *)@
+CCCC_MemExt@anonymous@DialogNote@@(QWidget *,Project *,Note *)@dialogs\dialognote.h@20@declaration@F???0@LOC:1 COM:0 MVG:0@0@D@
+CCCC_Member@anonymous@DialogProject@@(QWidget *,int)@
+CCCC_MemExt@anonymous@DialogProject@@(QWidget *,int)@dialogs\dialogproject.h@16@declaration@F???0@LOC:1 COM:0 MVG:0@0@D@
+CCCC_Member@anonymous@DialogTask@@(QWidget *,int,int)@
+CCCC_MemExt@anonymous@DialogTask@@(QWidget *,int,int)@dialogs\dialogtask.h@16@declaration@F???0@LOC:1 COM:0 MVG:0@0@D@
+CCCC_Member@anonymous@forceClose@@()@
+CCCC_MemExt@anonymous@forceClose@@()@dialogs\dialognote.h@23@declaration@F???0@LOC:1 COM:0 MVG:0@0@D@
+CCCC_Member@anonymous@updateNote@@()@
+CCCC_MemExt@anonymous@updateNote@@()@dialogs\dialognote.h@22@declaration@F???0@LOC:1 COM:0 MVG:0@0@D@
+CCCC_Member@anonymous@~DialogEvent@@()@
+CCCC_MemExt@anonymous@~DialogEvent@@()@dialogs\dialogevent.h@18@declaration@F???0@LOC:1 COM:0 MVG:0@0@D@
+CCCC_Member@anonymous@~DialogNote@@()@
+CCCC_MemExt@anonymous@~DialogNote@@()@dialogs\dialognote.h@21@declaration@F???0@LOC:1 COM:0 MVG:0@0@D@
+CCCC_Member@anonymous@~DialogProject@@()@
+CCCC_MemExt@anonymous@~DialogProject@@()@dialogs\dialogproject.h@17@declaration@F???0@LOC:1 COM:0 MVG:0@0@D@
+CCCC_Member@anonymous@~DialogTask@@()@
+CCCC_MemExt@anonymous@~DialogTask@@()@dialogs\dialogtask.h@17@declaration@F???0@LOC:1 COM:0 MVG:0@0@D@
+CCCC_UseRel@QDate@DialogEvent@
+CCCC_UseExt@QDate@DialogEvent@dialogs\dialogevent.cpp@7@pass by value@?????@*@?@P@
+CCCC_UseRel@QDialog@DialogEvent@
+CCCC_UseExt@QDialog@DialogEvent@dialogs\dialogevent.h@12@inheritance@????0@*@0@I@
+CCCC_UseRel@QWidget@DialogEvent@
+CCCC_UseExt@QWidget@DialogEvent@dialogs\dialogevent.cpp@7@pass by reference@?????@*@?@p@
+CCCC_UseRel@Note@DialogNote@
+CCCC_UseExt@Note@DialogNote@dialogs\dialognote.cpp@8@pass by reference@?????@*@?@p@
+CCCC_UseRel@Project@DialogNote@
+CCCC_UseExt@Project@DialogNote@dialogs\dialognote.cpp@8@pass by reference@?????@*@?@p@
+CCCC_UseRel@QCloseEvent@DialogNote@
+CCCC_UseExt@QCloseEvent@DialogNote@dialogs\dialognote.cpp@96@pass by reference@F????@*@?@p@
+CCCC_UseRel@QDialog@DialogNote@
+CCCC_UseExt@QDialog@DialogNote@dialogs\dialognote.h@15@inheritance@????0@*@0@I@
+CCCC_UseRel@QString@DialogNote@
+CCCC_UseExt@QString@DialogNote@dialogs\dialognote.cpp@134@pass by reference@F????@*@?@p@
+CCCC_UseRel@QWidget@DialogNote@
+CCCC_UseExt@QWidget@DialogNote@dialogs\dialognote.cpp@8@pass by reference@?????@*@?@p@
+CCCC_UseRel@bool@DialogNote@
+CCCC_UseExt@bool@DialogNote@dialogs\dialognote.cpp@86@pass by value@F????@*@?@P@
+CCCC_UseExt@bool@DialogNote@dialogs\dialognote.cpp@91@pass by value@F????@*@?@P@
+CCCC_UseRel@QDialog@DialogProject@
+CCCC_UseExt@QDialog@DialogProject@dialogs\dialogproject.h@11@inheritance@????0@*@0@I@
+CCCC_UseRel@QWidget@DialogProject@
+CCCC_UseExt@QWidget@DialogProject@dialogs\dialogproject.cpp@5@pass by reference@?????@*@?@p@
+CCCC_UseRel@QDialog@DialogTask@
+CCCC_UseExt@QDialog@DialogTask@dialogs\dialogtask.h@11@inheritance@????0@*@0@I@
+CCCC_UseRel@QWidget@DialogTask@
+CCCC_UseExt@QWidget@DialogTask@dialogs\dialogtask.cpp@6@pass by reference@?????@*@?@p@
+CCCC_RejExt@dialogs\dialogevent.cpp@1@<file scope items>@F????@LOC:0 COM:0 MVG:0@?@r@
+CCCC_RejExt@dialogs\dialognote.cpp@1@<file scope items>@F????@LOC:1 COM:0 MVG:0@?@r@
+CCCC_RejExt@dialogs\dialogproject.cpp@1@<file scope items>@F????@LOC:1 COM:0 MVG:0@?@r@
+CCCC_RejExt@dialogs\dialogtask.cpp@1@<file scope items>@F????@LOC:1 COM:0 MVG:0@?@r@

@@ -1,0 +1,150 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>MdiJournal</class>
+ <widget class="QDialog" name="MdiJournal">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>696</width>
+    <height>485</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>Journal</string>
+  </property>
+  <layout class="QVBoxLayout" name="verticalLayout" stretch="1,4,1">
+   <property name="spacing">
+    <number>0</number>
+   </property>
+   <property name="leftMargin">
+    <number>0</number>
+   </property>
+   <property name="topMargin">
+    <number>0</number>
+   </property>
+   <property name="rightMargin">
+    <number>0</number>
+   </property>
+   <property name="bottomMargin">
+    <number>0</number>
+   </property>
+   <item>
+    <widget class="QFrame" name="frame">
+     <property name="minimumSize">
+      <size>
+       <width>0</width>
+       <height>32</height>
+      </size>
+     </property>
+     <property name="maximumSize">
+      <size>
+       <width>16777215</width>
+       <height>32</height>
+      </size>
+     </property>
+     <property name="frameShape">
+      <enum>QFrame::StyledPanel</enum>
+     </property>
+     <property name="frameShadow">
+      <enum>QFrame::Raised</enum>
+     </property>
+    </widget>
+   </item>
+   <item>
+    <widget class="QTableWidget" name="tableWidget">
+     <property name="alternatingRowColors">
+      <bool>true</bool>
+     </property>
+     <property name="selectionMode">
+      <enum>QAbstractItemView::SingleSelection</enum>
+     </property>
+     <property name="selectionBehavior">
+      <enum>QAbstractItemView::SelectRows</enum>
+     </property>
+     <attribute name="horizontalHeaderStretchLastSection">
+      <bool>true</bool>
+     </attribute>
+     <attribute name="verticalHeaderVisible">
+      <bool>false</bool>
+     </attribute>
+     <attribute name="verticalHeaderDefaultSectionSize">
+      <number>24</number>
+     </attribute>
+     <column>
+      <property name="text">
+       <string>Time</string>
+      </property>
+     </column>
+     <column>
+      <property name="text">
+       <string>Event</string>
+      </property>
+     </column>
+    </widget>
+   </item>
+   <item>
+    <widget class="QGroupBox" name="groupBox">
+     <property name="minimumSize">
+      <size>
+       <width>0</width>
+       <height>200</height>
+      </size>
+     </property>
+     <property name="title">
+      <string>Details</string>
+     </property>
+     <layout class="QVBoxLayout" name="verticalLayout_2">
+      <item>
+       <widget class="QTextEdit" name="textEdit">
+        <property name="readOnly">
+         <bool>true</bool>
+        </property>
+       </widget>
+      </item>
+     </layout>
+    </widget>
+   </item>
+  </layout>
+  <action name="actionNewEvent">
+   <property name="icon">
+    <iconset resource="../icons.qrc">
+     <normaloff>:/std/icons/calendar--plus.png</normaloff>:/std/icons/calendar--plus.png</iconset>
+   </property>
+   <property name="text">
+    <string>New Event</string>
+   </property>
+   <property name="toolTip">
+    <string>New Event</string>
+   </property>
+  </action>
+  <action name="actionEditEvent">
+   <property name="enabled">
+    <bool>false</bool>
+   </property>
+   <property name="icon">
+    <iconset resource="../icons.qrc">
+     <normaloff>:/std/icons/calendar--pencil.png</normaloff>:/std/icons/calendar--pencil.png</iconset>
+   </property>
+   <property name="text">
+    <string>Edit Event</string>
+   </property>
+  </action>
+  <action name="actionDeleteEvent">
+   <property name="enabled">
+    <bool>false</bool>
+   </property>
+   <property name="icon">
+    <iconset resource="../icons.qrc">
+     <normaloff>:/std/icons/calendar--minus.png</normaloff>:/std/icons/calendar--minus.png</iconset>
+   </property>
+   <property name="text">
+    <string>delete Event</string>
+   </property>
+  </action>
+ </widget>
+ <resources>
+  <include location="../icons.qrc"/>
+ </resources>
+ <connections/>
+</ui>
