@@ -69,4 +69,4 @@ RESOURCES += \
 OTHER_FILES += \
     model.sql
 
-win32:RC_ICONS += icons/87457.ico
+win32:RC_ICONS += icons/pman.ico
