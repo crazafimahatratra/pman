@@ -6,5 +6,5 @@ A pretty little project Manager
 ## Compilation
 Compiled with Qt5.2.0
 
-## Sources
-You can find the sources [here](https://github.com/crazafimahatratra/pman) if you are willing to.
+## Download
+If you want to try it, but have no much time to compile, download the binary (for windows) ![here](https://sourceforge.net/projects/chraz-pman) 
