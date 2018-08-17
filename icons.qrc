@@ -1,8 +1,7 @@
 <RCC>
-  <qresource prefix="std">
-    <file>icons/87457.png</file>
+  <qresource prefix="/std">
+    <file>icons/pman.png</file>
     <file>icons/question.png</file>
-    <file>icons/87457.ico</file>
     <file>icons/sticky-note.png</file>
     <file>icons/sticky-note--plus.png</file>
     <file>icons/notebook--minus.png</file>

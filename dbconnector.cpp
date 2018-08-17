@@ -3,6 +3,7 @@
 #include <QDir>
 #include <QDebug>
 #include <QFile>
+#include <QtWidgets/QMessageBox>
 
 DbConnector* DbConnector::instance = NULL;
 
@@ -18,7 +19,10 @@ DbConnector::DbConnector()
     path += "/pman.db";
     database.setDatabaseName(path);
     if(!database.open())
+    {
+        QMessageBox::critical(0, "Error while creating database", QString("Error while opening database : \n%1").arg(database.lastError().text()));
         exit(EXIT_FAILURE);
+    }
     QSqlQuery query(database);
     if(!query.exec("PRAGMA foreign_keys=ON;"))
     {
