@@ -21,12 +21,16 @@ public:
     ~MdiProject();
     int projectId();
 signals:
-    void TaskListModified();
+    void TaskListModified(int);
 
 private slots:
     void onProjectRemoved(int);
 
     void onProjectModified(int);
+
+    void onViewCanceledTasks(bool checked);
+
+    void onViewCompletedTasks(bool checked);
 
     void on_actionNew_Task_triggered();
 
@@ -42,9 +46,15 @@ private slots:
 
     void on_actionMarkAsPending_triggered();
 
+    void on_actionCancel_Task_triggered();
+
+    void on_actionActivate_Task_triggered();
+
 private:
     Ui::MdiProject *ui;
     Project *project;
+    bool viewCanceledTasks;
+    bool viewCompletedTasks;
     Task *selectedTask();
     void updateToolBar();
     void fillTasks();

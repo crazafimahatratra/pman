@@ -49,6 +49,16 @@ void MainWindow::changeEvent(QEvent *event)
     event->accept();
 }
 
+bool MainWindow::canceledTasksVisible()
+{
+    return ui->actionViewCanceled_tasks->isChecked();
+}
+
+bool MainWindow::completedTasksVisible()
+{
+    return ui->actionViewCompleted_tasks->isChecked();
+}
+
 void MainWindow::on_action_Project_triggered()
 {
     DialogProject d(this);
@@ -133,7 +143,10 @@ void MainWindow::on_listWidget_itemDoubleClicked(QListWidgetItem *item)
     MdiProject *win = new MdiProject(this, id);
     ui->mdiAreaProjects->addSubWindow(win);
     win->showMaximized();
-    connect(win, SIGNAL(TaskListModified()), this, SLOT(onTaskListChanged()));
+    connect(win, SIGNAL(TaskListModified(int)), this, SLOT(onTaskListChanged(int)));
+    connect(this, SIGNAL(showCanceledTasks(bool)), win, SLOT(onViewCanceledTasks(bool)));
+    connect(this, SIGNAL(showCompletedTasks(bool)), win, SLOT(onViewCompletedTasks(bool)));
+
     updateMdiTabBar(ui->mdiAreaProjects);
 }
 
@@ -257,15 +270,33 @@ void MainWindow::onMiniWindowClosed()
     dialogMiniTasks->hide();
 }
 
-void MainWindow::onTaskListChanged()
+void MainWindow::onTaskListChanged(int project_id)
 {
-    listProjects();
+    for(int i = 0; i < ui->listWidget->count(); i++)
+    {
+        QListWidgetItem *item = ui->listWidget->item(i);
+        if(project_id != item->data(Qt::UserRole).toInt())
+        {
+            continue;
+        }
+        ProjectWidgetItem *pitem = (ProjectWidgetItem*) ui->listWidget->itemWidget(item);
+        Project *p  = Project::findById(project_id);
+        pitem->setCount(p->nb_pendings);
+    }
 }
-
-
 
 void MainWindow::on_actionAbout_triggered()
 {
     DialogAbout *about = new DialogAbout(this);
     about->exec();
+}
+
+void MainWindow::on_actionViewCanceled_tasks_triggered(bool checked)
+{
+    emit this->showCanceledTasks(checked);
+}
+
+void MainWindow::on_actionViewCompleted_tasks_triggered(bool checked)
+{
+    emit this->showCompletedTasks(checked);
 }

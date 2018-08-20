@@ -8,12 +8,20 @@ ProjectWidgetItem::ProjectWidgetItem(QWidget *parent, QString label, int count) 
     ui->setupUi(this);
     ui->label->setText(label);
     ui->labelCount->setText("");
-    if(count) {
-        ui->labelCount->setText(QString("(%1)").arg(count));
-    }
+    this->setCount(count);
 }
 
 ProjectWidgetItem::~ProjectWidgetItem()
 {
     delete ui;
+}
+
+void ProjectWidgetItem::setCount(int count)
+{
+    if(count)
+    {
+        ui->labelCount->setText(QString("(%1)").arg(count));
+    } else {
+        ui->labelCount->setText("");
+    }
 }

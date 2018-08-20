@@ -14,6 +14,7 @@ class ProjectWidgetItem : public QWidget
 public:
     explicit ProjectWidgetItem(QWidget *parent, QString label, int count);
     ~ProjectWidgetItem();
+    void setCount(int);
 
 private:
     Ui::ProjectWidgetItem *ui;

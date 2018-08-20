@@ -149,6 +149,24 @@
     <string>New Note</string>
    </property>
   </action>
+  <action name="actionCancel_Task">
+   <property name="icon">
+    <iconset resource="../icons.qrc">
+     <normaloff>:/std/icons/status-offline.png</normaloff>:/std/icons/status-offline.png</iconset>
+   </property>
+   <property name="text">
+    <string>Cancel Task</string>
+   </property>
+  </action>
+  <action name="actionActivate_Task">
+   <property name="icon">
+    <iconset resource="../icons.qrc">
+     <normaloff>:/std/icons/status.png</normaloff>:/std/icons/status.png</iconset>
+   </property>
+   <property name="text">
+    <string>Activate Task</string>
+   </property>
+  </action>
  </widget>
  <resources>
   <include location="../icons.qrc"/>

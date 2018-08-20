@@ -155,6 +155,9 @@
     </property>
     <addaction name="actionTasks"/>
     <addaction name="actionEvents"/>
+    <addaction name="separator"/>
+    <addaction name="actionViewCanceled_tasks"/>
+    <addaction name="actionViewCompleted_tasks"/>
    </widget>
    <widget class="QMenu" name="menuHelp">
     <property name="title">
@@ -351,6 +354,28 @@
    </property>
    <property name="text">
     <string>About</string>
+   </property>
+  </action>
+  <action name="actionViewCanceled_tasks">
+   <property name="checkable">
+    <bool>true</bool>
+   </property>
+   <property name="checked">
+    <bool>false</bool>
+   </property>
+   <property name="text">
+    <string>Canceled tasks</string>
+   </property>
+  </action>
+  <action name="actionViewCompleted_tasks">
+   <property name="checkable">
+    <bool>true</bool>
+   </property>
+   <property name="checked">
+    <bool>true</bool>
+   </property>
+   <property name="text">
+    <string>Completed  tasks</string>
    </property>
   </action>
  </widget>

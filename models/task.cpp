@@ -7,6 +7,7 @@ Task::Task():BaseModel("task", "id")
 {
     id = 0;
     status = 'P';
+    canceled = false;
 }
 
 int Task::insert()
@@ -40,6 +41,18 @@ void Task::markAsPending()
     this->update();
 }
 
+void Task::cancel()
+{
+    this->canceled = true;
+    this->update();
+}
+
+void Task::activate()
+{
+    this->canceled = false;
+    this->update();
+}
+
 bool Task::isDone()
 {
     return this->status == 'D';
@@ -53,11 +66,21 @@ QList<Task *> Task::findAll()
     return recordsToList(res);
 }
 
-QList<Task *> Task::findByProject(int project_id)
+QList<Task *> Task::findByProject(int project_id, bool hideCanceled, bool hideCompleted)
 {
     Task *t = new Task();
     QMap<QString, QVariant> wheres;
     wheres["project_id="] = project_id;
+    if(hideCanceled)
+    {
+        wheres["canceled = "] = false;
+    }
+
+    if(hideCompleted)
+    {
+        wheres["status = "] = "P";
+    }
+
     QList<QSqlRecord> res = t->BaseModel::findWhere(wheres);
     delete t;
     return recordsToList(res);
@@ -101,6 +124,7 @@ void Task::fromRecord(QSqlRecord res)
     this->label = res.value("label").toString();
     this->comment = res.value("comment").toString();
     this->status = res.value("status").toString().at(0);
+    this->canceled = res.value("canceled").toBool();
 }
 
 QMap<QString, QVariant> Task::toMap()
@@ -111,5 +135,6 @@ QMap<QString, QVariant> Task::toMap()
     data["date"] = this->date;
     data["comment"] = this->comment;
     data["status"] = this->status;
+    data["canceled"] = this->canceled;
     return data;
 }

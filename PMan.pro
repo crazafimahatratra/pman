@@ -29,7 +29,8 @@ SOURCES += main.cpp\
     models/event.cpp \
     widgets/projectwidgetitem.cpp \
     dialogs/dialogminitasks.cpp \
-    dialogabout.cpp
+    dialogabout.cpp \
+    models/version.cpp
 
 HEADERS  += mainwindow.h \
     dialogs/dialogproject.h \
@@ -48,7 +49,8 @@ HEADERS  += mainwindow.h \
     models/event.h \
     widgets/projectwidgetitem.h \
     dialogs/dialogminitasks.h \
-    dialogabout.h
+    dialogabout.h \
+    models/version.h
 
 FORMS    += mainwindow.ui \
     dialogs/dialogproject.ui \
@@ -64,7 +66,8 @@ FORMS    += mainwindow.ui \
 
 RESOURCES += \
     icons.qrc \
-    models.qrc
+    models.qrc \
+    patches.qrc
 
 OTHER_FILES += \
     model.sql

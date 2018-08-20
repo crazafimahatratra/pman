@@ -20,9 +20,14 @@ public:
     explicit MainWindow(QWidget *parent = 0);
     ~MainWindow();
     void changeEvent(QEvent *event);
+    bool canceledTasksVisible();
+    bool completedTasksVisible();
+
 signals:
     void projectRemoved(int);
     void projectModified(int);
+    void showCanceledTasks(bool);
+    void showCompletedTasks(bool);
 
 private slots:
     void on_action_Project_triggered();
@@ -53,10 +58,13 @@ private slots:
 
     void onMiniWindowClosed();
 
-    void onTaskListChanged();
-
+    void onTaskListChanged(int project_id);
 
     void on_actionAbout_triggered();
+
+    void on_actionViewCanceled_tasks_triggered(bool checked);
+
+    void on_actionViewCompleted_tasks_triggered(bool checked);
 
 private:
     Ui::MainWindow *ui;

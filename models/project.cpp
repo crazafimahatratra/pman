@@ -3,6 +3,7 @@
 #include <QVariant>
 #include <QPainter>
 #include <QDebug>
+#include "models/task.h"
 
 Project::Project():BaseModel(TABLE_NAME, "id")
 {
@@ -70,7 +71,12 @@ Project *Project::findById(int id)
     if(record != NULL)
     {
         Project *p = new Project();
+        Task *t = new Task();
+        QMap<QString, QVariant> wheres;
+        wheres["project_id = "] = id;
+        wheres["status =  "] = "P";
         p->fromRecord(*record);
+        p->nb_pendings = t->countWhere(wheres);
         return p;
     }
     return NULL;

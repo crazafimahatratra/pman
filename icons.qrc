@@ -1,5 +1,9 @@
 <RCC>
   <qresource prefix="/std">
+    <file>icons/status.png</file>
+    <file>icons/status-away.png</file>
+    <file>icons/status-busy.png</file>
+    <file>icons/status-offline.png</file>
     <file>icons/pman.png</file>
     <file>icons/question.png</file>
     <file>icons/sticky-note.png</file>
